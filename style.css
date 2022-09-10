@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #dfe3ee;
+}
+.card {
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  width: 60%;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.card #screen {
+  width: 95%;
+  font-size: 40px;
+  padding: 10px;
+  height: 100px;
+  margin: 15px;
+  margin-top: -10px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  color: #455;
+}
+.card table tr button {
+  height: 70px;
+  width: 180px;
+  margin: 5px;
+  font-size: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  color: #455;
+  cursor: pointer;
+}
+.card table tr button:hover {
+  transition: 0.5s ease;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.card h2 {
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+  margin-left: -600px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #455;
+}
+.card table .firstrow button {
+  height: 55px;
+}
+
+/*For large tablet*/
+@media (max-width:1024px){
+  .card{
+    position: absolute;
+    top: 50%;
+    width: 800px;
+    height: 800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card table tr button{
+    width: 175px;
+    height: 100px;
+  }
+  .card #screen{
+    height: 140px;
+  }
+  .card table .firstrow button{
+    height: 80px;
+  }
+}
+
+/*For phone + smallTablet*/
+@media (max-width:800px){
+  .card{
+    position: absolute;
+    top: 50%;
+    width: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card table tr button{
+    width: 140px;
+  }
+  .card h2{
+    margin-left: -470px;
+  }
+}
+
+/*For large tablets*/
+@media (max-width:768px){
+  .card{
+    position: absolute;
+    top: 50%;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card table tr button{
+    width: 130px;
+  }
+
+  .card h2{
+    margin-left: -400px;
+  }
+}
+
+/*For mobile phones*/
+@media (max-width: 480px) {
+  .card {
+    position: absolute;
+    width: 400px;
+    height: 580px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card #screen {
+    margin-top: -10px;
+    height: 90px;
+  }
+  .card table tr button {
+    width: 85px;
+    height: 75px;
+  }
+  .card table .firstrow button {
+    height: 50px;
+  }
+  .card h2{
+    margin-left: -240px;
+    margin-top: -10px;
+  }
+}
+
+/*For smaller mobile width like galaxy a52*/
+@media (max-width:418px){
+  .card {
+    position: absolute;
+    width: 370px;
+    height: 580px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card table tr button{
+    width: 75px;
+    height: 70px;
+  }
+  .card h2{
+    margin-left: -210px;
+  }
+  .card #screen {
+   height: 90px;
+   width: 340px;
+}
